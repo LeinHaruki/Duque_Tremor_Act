@@ -1,61 +1,142 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🖥️ CLINIC APPOINTMENT SYSTEM
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+---
 
-## About Laravel
+## 📘 Description / Overview
+The **Clinic Appointment System**, made by **Lein Rhowen Tremor**, is a **Transaction Processing System** designed to manage and organize patient appointments at **Tremor Clinic**.  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+This system provides an efficient way for patients to book, reschedule, or cancel appointments, while allowing clinic staff to monitor schedules and manage records easily.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🎯 Objectives
+To develop a web-based **Clinic Appointment System** that simplifies the scheduling process between patients and the clinic.  
+- To automate the process of **booking, rescheduling, and canceling appointments** to reduce manual errors and time delays.  
+- To provide an organized system for managing **patient information and appointment records**.  
+- To allow clinic staff to **view, approve, or modify appointments** through an administrative interface.  
+- To ensure **data accuracy, security, and accessibility** within the clinic’s database.  
+- To enhance user experience by creating a **responsive and user-friendly interface** for both patients and clinic staff.  
+- To demonstrate the application of **transaction processing and database management concepts** in a real-world healthcare setting.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ⚙️ Features / Functionality
+- **Dashboard** — provides an overview of key data such as total patients, doctors, appointments, and payments.  
+- **Add Patient** — allows users to register and store patient information in the system.  
+- **Add Doctor** — enables users to record doctor details for appointment assignment.  
+- **Add Appointment** — users can create appointments by selecting a patient, doctor, and specifying the purpose of the visit.  
+- **Add Payment** — records payment details related to confirmed appointments.  
+- **CRUD Operations** — supports Create, Read, Update, and Delete functionalities for patients, doctors, appointments, and payments.  
+- **Light and Dark Mode** — allows users to switch between display themes for better visibility and comfort.  
+- **Data Organization** — integrates all records in a structured database for easy tracking and management.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 🧩 Installation Instructions
+Follow the steps below to set up and run the Clinic Appointment System on your local machine:
 
-## Laravel Sponsors
+1. **Download or Clone the Project**
+   - Download the ZIP file or clone the repository using (the repository of ACT 1):
+     ```bash
+     git clone https://github.com/LeinHaruki/Duque_Tremor_Act.git
+     ```
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+2. **Move the Project Folder**
+   - Extract or copy the project folder into the `htdocs` directory of your **XAMPP** installation.  
+     Example path:  
+     ```
+     C:\xampp\htdocs\clinic-appointment-system
+     ```
 
-### Premium Partners
+3. **Start XAMPP Services**
+   - Open the **XAMPP Control Panel**.  
+   - Start **Apache** and **MySQL** modules.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+4. **Set Up the Database**
+   - Open your browser and go to:  
+     ```
+     http://localhost/phpmyadmin
+     ```
+   - Create a new database named:  
+     ```
+     clinic_appoinment_system
+     ```
+   - Import the provided SQL file (e.g., `clinic_appoinment_system.sql`) into this database.
 
-## Contributing
+5. **Configure Database Connection**
+   - Open the project’s configuration file (e.g., `dbconnect.php` or `connection.php`).
+   - Make sure the following settings match your local environment:
+     ```php
+     $servername = "localhost";
+     $username = "root";
+     $password = "";
+     $dbname = "clinic_appoinment_system";
+     ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+6. **Run the Project**
+   - Open your web browser and navigate to:
+     ```
+     http://127.0.0.1:8000/dashboard
+     ```
+   - The system’s dashboard should now be accessible and the system is ready to use.
+---
 
-## Code of Conduct
+## 🚀 Usage
+Follow these steps to use the Clinic Appointment System efficiently:
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+1. **Access the System**
+   - Open your browser and go to:
+     ```
+     http://127.0.0.1:8000/dashboard
+     ```
+   - The system dashboard will display summaries such as total patients, doctors, appointments, and payments.
 
-## Security Vulnerabilities
+2. **Add a Patient**
+   - Navigate to the **“Add Patient”** section.  
+   - Fill in the patient’s details (e.g., name, contact information, and other required fields).  
+   - Click **Save** to store the record in the database.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+3. **Add a Doctor**
+   - Go to the **“Add Doctor”** section.  
+   - Enter the doctor’s details, including their name, specialization, and contact information.  
+   - Click **Save** to add the doctor to the system.
 
-## License
+4. **Add an Appointment**
+   - Open the **“Add Appointment”** page.  
+   - Select an existing patient and doctor from the dropdown lists.  
+   - Specify the **purpose of the appointment** and the **date/time**.  
+   - Click **Submit** to create the appointment record.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+5. **Add a Payment**
+   - Go to the **“Add Payment”** section.  
+   - Choose the corresponding appointment and enter payment details (amount, method, etc.).  
+   - Once saved, the appointment will automatically update to reflect the payment status.
+
+6. **View or Update Records**
+   - Each module (Patients, Doctors, Appointments, Payments) allows you to **view, edit, or delete** existing records using the provided action buttons.
+
+7. **Switch Themes**
+   - Toggle between **Light Mode** and **Dark Mode** using the theme switcher in the interface for improved visibility and comfort.
+
+
+---
+
+## 🖼️ Screenshots or Code Snippets
+Below are sample screenshots of the Clinic Appointment System interface:
+
+#### 🏠 Dashboard
+![Dashboard](images/dashboard.png)
+
+#### 👨‍⚕️ Add Doctor
+![Add Doctor](images/add_doctor.png)
+
+#### 👩‍⚕️ Add Patient
+![Add Patient](images/add_patient.png)
+
+#### 📅 Add Appointment
+![Add Appointment](images/add_appointment.png)
+
+#### 💳 Add Payment
+![Add Payment](images/add_payment.png)
+
+
