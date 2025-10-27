@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
  * 
  * @property int $id
  * @property int $appointment_id Foreign key to appointments table
- * @property decimal $amount Payment amount
+ * @property float $amount Payment amount
  * @property string $method Payment method (Cash, Credit Card, etc.)
  * @property string $status Payment status (Paid, Unpaid)
  * @property \Carbon\Carbon $created_at
