@@ -140,3 +140,23 @@ Below are sample screenshots of the Clinic Appointment System interface:
 ![Add Payment](images/add_payment.png)
 
 
+---
+
+## 👥 Contributors
+- **Lein Rhowen Tremor**  
+  Developer of the Clinic Appointment System  
+  BS Information Technology Student  
+  Don Mariano Marcos Memorial State University - MLUC  
+
+- **Gilwu Asher Duque**  
+  Co-Developer / Project Partner  
+  BS Information Technology Student  
+  Don Mariano Marcos Memorial State University - MLUC  
+
+---
+
+## 🧾 License
+This project is licensed for **educational purposes only**.  
+You may modify and use the system for learning, research, and academic development.  
+Commercial use or distribution without permission is not allowed.
+
